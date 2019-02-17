@@ -1,6 +1,6 @@
 import smartcar
 
-access_token = '742b2bbf-a04d-4ccc-94cd-3a78e81de3a8'
+access_token = 'cfc0ed4e-2aa6-4687-a5c5-2d3df2a93fb0'
 
 response = smartcar.get_vehicle_ids(access_token)
 
