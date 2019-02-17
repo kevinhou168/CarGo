@@ -5,12 +5,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
+import android.net.Uri;
 import android.widget.TextView;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
 public class Setup extends AppCompatActivity {
 
     private int numtest = 1;
+    private WebView webview;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,7 +44,7 @@ public class Setup extends AppCompatActivity {
             }
         });
 
-       Button back = findViewById(R.id.back);
+        Button back = findViewById(R.id.back);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
