@@ -6,29 +6,28 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class namesetup extends AppCompatActivity {
+public class Drop extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_namesetup);
+        setContentView(R.layout.activity_drop);
 
-        Button begintrip = findViewById(R.id.begintrip);
-        begintrip.setOnClickListener(new View.OnClickListener() {
+        Button confirmdrop = findViewById(R.id.confirmdrop);
+        confirmdrop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 goToDriving();
             }
         });
 
-        Button back2 = findViewById(R.id.back2);
-        back2.setOnClickListener(new View.OnClickListener() {
+        Button back3 = findViewById(R.id.back3);
+        back3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                goBackToSetup();
+                goToDriving3();
             }
         });
-
     }
 
     private void goToDriving() {
@@ -36,9 +35,8 @@ public class namesetup extends AppCompatActivity {
         startActivity(intent);
     }
 
-
-    private void goBackToSetup() {
-        Intent intent = new Intent(this, Setup.class);
+    private void goToDriving3() {
+        Intent intent = new Intent(this, Driving3.class);
         startActivity(intent);
     }
 }

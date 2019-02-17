@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public void goToStartTrip() {                                      //Button START TRIP
+    private void goToStartTrip() {                                      //Button START TRIP
         Intent intent = new Intent(MainActivity.this, Setup.class);
         startActivity(intent);
     }

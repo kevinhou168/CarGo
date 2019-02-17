@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".namesetup"></activity>
+        <activity android:name=".Driving3"></activity>
+        <activity android:name=".Finish" />
+        <activity android:name=".Drop" />
+        <activity android:name=".Add" />
+        <activity android:name=".Driving" />
+        <activity android:name=".namesetup" />
         <activity android:name=".Setup" />
         <activity android:name=".MainActivity">
             <intent-filter>

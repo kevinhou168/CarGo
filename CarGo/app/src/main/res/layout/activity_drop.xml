@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Drop">
+
+    <Button
+        android:id="@+id/confirmdrop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ok"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="611dp" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="92dp"
+        android:layout_height="61dp"
+        android:text="$0.00"
+        android:textSize="36sp"
+        tools:layout_editor_absoluteX="159dp"
+        tools:layout_editor_absoluteY="480dp" />
+
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 miles"
+        android:textSize="36sp"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="364dp" />
+
+    <Button
+        android:id="@+id/back3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="back "
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="40dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zain"
+        android:textSize="36sp"
+        tools:layout_editor_absoluteX="170dp"
+        tools:layout_editor_absoluteY="206dp" />
+</android.support.constraint.ConstraintLayout>
