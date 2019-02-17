@@ -13,22 +13,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button start = findViewById(R.id.start);                        //Button START TRIP
+        Button start = (Button) findViewById(R.id.start);                        //Button START TRIP
         start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 goToStartTrip();
+
             }
         });
     }
 
-    private void goToStartTrip() {                                      //Button START TRIP
-        Intent intent = new Intent(this, SetupActivity.class);
+    public void goToStartTrip() {                                      //Button START TRIP
+        Intent intent = new Intent(MainActivity.this, Setup.class);
         startActivity(intent);
-    }
-
-    private void goToTripHistory() {                                    //Button MY TRIPS
-
-
     }
 }
