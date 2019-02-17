@@ -33,7 +33,7 @@ public class Driving extends AppCompatActivity {
         finish.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                goToFinish();
+                goTosummary();
             }
         });
     }
@@ -48,8 +48,8 @@ public class Driving extends AppCompatActivity {
         startActivity(intent);
     }
 
-    private void goToFinish() {
-        Intent intent = new Intent(this, Finish.class);
+    private void goTosummary() {
+        Intent intent = new Intent(this, summary.class);
         startActivity(intent);
     }
 
