@@ -11,7 +11,6 @@
         android:theme="@style/AppTheme">
         <activity android:name=".summary"></activity>
         <activity android:name=".Driving3" />
-        <activity android:name=".Finish" />
         <activity android:name=".Drop" />
         <activity android:name=".Add" />
         <activity android:name=".Driving" />

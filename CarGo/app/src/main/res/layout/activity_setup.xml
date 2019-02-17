@@ -12,7 +12,7 @@
         android:layout_height="86dp"
         android:layout_marginStart="50dp"
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="110dp"
         android:layout_marginEnd="50dp"
         android:layout_marginRight="50dp"
         android:layout_marginBottom="100dp"
@@ -24,7 +24,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
 
     <Button
         android:id="@+id/okbutton"
@@ -61,6 +62,55 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/numRiders"
+        android:layout_width="139dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="194dp"
+        android:layout_marginLeft="194dp"
+        android:layout_marginEnd="78dp"
+        android:layout_marginRight="78dp"
+        android:layout_marginBottom="1dp"
+        android:text="1"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/minus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plus" />
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="47dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="182dp"
+        android:layout_marginLeft="182dp"
+        android:layout_marginEnd="182dp"
+        android:layout_marginRight="182dp"
+        android:text="^"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/minus"
+        android:layout_width="47dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="182dp"
+        android:layout_marginLeft="182dp"
+        android:layout_marginEnd="182dp"
+        android:layout_marginRight="182dp"
+        android:layout_marginBottom="61dp"
+        android:rotation="180"
+        android:text="^"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/okbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
 
